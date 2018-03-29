@@ -1,1 +1,205 @@
+/* Core Styles */
 
+html {
+  box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* Nav */
+
+nav {
+  background-color: #80d8ff;
+}
+#author-name {
+  float: left;
+  text-align: left;
+}
+
+#nav-menu {
+  text-align: right;
+}
+
+span, #name {
+  color: red;
+  font-weight: bold;
+}
+
+/* Header Canvas */
+
+#canvas {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+
+/* main */
+main {
+  background-color: #009688;
+}
+
+/* section a */
+#section-a {
+  display: table;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+#leftcolumn {
+  display: table-cell;
+  width: 50%;
+  border: 1px solid red;
+  vertical-align: middle;
+}
+
+#rightcolumn {
+  display: table-cell;
+  width: 50%;
+  border: 1px solid red;
+  vertical-align: middle;
+}
+
+/* section-b */
+/* timeline info will go here */
+#section-b {
+  display: table;
+  width: 100%;
+  border: 1px solid yellow;
+}
+
+.list-item {
+  float: left;
+  clear: left;
+}
+
+/* section-c */
+#section-c {
+  display: table;
+  width: 100%;
+  border: 1px solid purple;
+}
+
+.skills-block1, #skillbox1, #skillbox2, #skillbox3 {
+  display: inline-block;
+  margin-right: 40px;
+  border-style: dotted;
+} 
+.skills-block2, #skillbox4, #skillbox5, #skillbox6 {
+  display: inline-block;
+  margin-right: 40px;
+  border-style: dotted;
+}
+
+/* section-d */
+/* social media/contact me */
+.media-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mediaList, #media1, #media2, #media3, #media4 {
+  display: inline-block;
+  margin-right: 40px; /* gap between */
+  padding: 25px 50px 75px 100px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+}
+
+#site-version {
+  float: left;
+}
+
+#site-dev, #comp-name {
+  text-align: right;
+}
+
+/* CSS Grids */
+
+#grid {
+  display: grid;
+}
+
+#grid {
+  grid-template-areas: "nav nav nav"
+                       "header  header header"
+                       "main  main main"
+                       "footer footer footer"
+}
+
+#grid > header {
+  grid-area: header;
+}
+
+#grid > nav {
+  grid-area: nav;
+}
+
+#grid > main {
+  grid-area: main;
+}
+
+#grid > footer {
+  grid-area: footer;
+}
+
+/* Media Queries */
+
+@media(min-width: 700px) {
+  .grid {
+    display: grid;
+  }
+}
