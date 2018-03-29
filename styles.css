@@ -1,3 +1,7 @@
+/* Imports */
+@import
+  url(https://fonts.googleapis.com/css?family=Roboto);
+
 /* Core Styles */
 
 html {
@@ -80,7 +84,34 @@ span, #name {
   min-height: 450px;
   color: #fff;
   text-align: center;
-  background-color: #333;
+  background-color: #111;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.terminal-container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  text-align: center;
+  height: 100px;
+  width: 550px;
+  display: block;
+  position: absolute;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
 }
 
 /* main */
